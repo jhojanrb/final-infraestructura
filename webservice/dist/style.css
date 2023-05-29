@@ -1,0 +1,121 @@
+body{
+    background-image: url('1397714.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f1f1f1;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.switch-container h3 {
+  margin-right: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2596be;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  display: block;
+  color: #2596be;
+}
+
+.switch-container h3 {
+  margin-right: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Estilos restantes del switch... */
+
+/* @media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .switch-container h3 {
+    font-size: 16px;
+  }
+} */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .switch-container h3 {
+    font-size: 16px;
+  }
+}
